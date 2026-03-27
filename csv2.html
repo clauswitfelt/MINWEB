@@ -20,19 +20,19 @@
   let FN;
   let listeMedValgte = [];
   let data;
-  var overskrift = null
-  var beskrivelse = null
-  var progression = null
+  var kunstner = null
+  var album = null
+  var link = null
 
 function ny() {
   var pic;
   x = Math.floor(Math.random()*4+1);
   console.log(x);
   genererTekst(x);
-   document.getElementById('overskrift').innerHTML = kunstner;
-  document.getElementById('beskrivelse').innerHTML = album;
-  document.getElementById('progression').innerHTML = link;
-  document.getElementById('myImage').src = pic;
+   document.getElementById('kunstner').innerHTML = kunstner;
+  document.getElementById('album').innerHTML = album;
+  document.getElementById('link').innerHTML = link;
+   
 }
 
 function valgte(){

@@ -30,9 +30,9 @@ function ny() {
   x = Math.floor(Math.random()*4+1);
   console.log(x);
   genererTekst(x);
-   document.getElementById('overskrift').innerHTML = overskrift;
-  document.getElementById('beskrivelse').innerHTML = beskrivelse;
-  document.getElementById('progression').innerHTML = progression;
+   document.getElementById('overskrift').innerHTML = kunstner;
+  document.getElementById('beskrivelse').innerHTML = album;
+  document.getElementById('progression').innerHTML = link;
   document.getElementById('myImage').src = pic;
 }
 
@@ -45,10 +45,10 @@ function valgte(){
 
 function genererTekst(x){
   for (var i = 0; i < data.length; i++) {
-      if (data[i]["ID"] == x) {
-        overskrift = data[i]['overskrift']; 
-        beskrivelse = data[i]['beskrivelse'];
-        progression = data[i]['progression'];
+      if (data[i]["id"] == x) {
+        kunstner = data[i]['kunstner']; 
+        album = data[i]['album'];
+        link = data[i]['link'];
  
         break; // exit efter loop
       }
